@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Npc/sensei.tscn" type="PackedScene" id=2]
+
+[node name="World" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 193, 82 )
+current = true
+smoothing_enabled = true
+
+[node name="YSort" type="YSort" parent="."]
+position = Vector2( 159, 88 )
+
+[node name="Sensei" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -117, -8 )
+
+[node name="Player" parent="YSort" instance=ExtResource( 1 )]
+position = Vector2( 34, -6 )
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
+remote_path = NodePath("../../../Camera2D")

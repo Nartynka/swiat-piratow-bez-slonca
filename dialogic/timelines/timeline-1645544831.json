@@ -1,0 +1,157 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1645543439.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "Default",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1645543439.json",
+			"event_id": "dialogic_001",
+			"portrait": "sesnsei_avatar",
+			"text": "Witaj!"
+		},
+		{
+			"action": "join",
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hej"
+		},
+		{
+			"character": "character-1645543439.json",
+			"event_id": "dialogic_001",
+			"portrait": "sesnsei_avatar",
+			"text": "Mam do ciebie odwieczne pytanie"
+		},
+		{
+			"character": "character-1645543439.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "(Don't change)",
+			"question": "Czy jestes na nie gotowy?"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 30
+		},
+		{
+			"choice": "Tak",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oczywiscie! Dawaj co masz"
+		},
+		{
+			"choice": "Nie",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Niestety nie wydaje mi sie, abym byl gotowy na taka madrosc"
+		},
+		{
+			"character": "character-1645543439.json",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "Rozumiem, wroc jak bedziesz gotowy"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1645543439.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Odwieczne pytanie ktore rodzi wiele wojen to"
+		},
+		{
+			"character": "character-1645543439.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "(Don't change)",
+			"question": "Kawa czy herbata?"
+		},
+		{
+			"choice": "KAWA!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jak mowi swiete przykazanie, walne kawusie i bedzie git!"
+		},
+		{
+			"choice": "Herbatka <3",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Herbata z rana jak smietana!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1645543439.json",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "A wiec wybrales!\nNiech tlum zdecyduje czy wybrales dobrze!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1645544831.json",
+		"name": "sensei"
+	}
+}
