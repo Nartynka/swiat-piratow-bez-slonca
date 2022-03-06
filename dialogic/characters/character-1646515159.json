@@ -9,7 +9,7 @@
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 100,
-	"offset_y": -100,
+	"offset_y": -75,
 	"portraits": [
 		{
 			"name": "Default",
