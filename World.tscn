@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Npc/sensei.tscn" type="PackedScene" id=2]
+[ext_resource path="res://DialogueNPCs/DuckyNpc/DuckyNPC.tscn" type="PackedScene" id=3]
 
 [node name="World" type="Node"]
 
@@ -21,3 +22,7 @@ position = Vector2( 34, -6 )
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
 remote_path = NodePath("../../../Camera2D")
+
+[node name="Ducky" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 117.553, -65.3214 )
+DialogueTimelineName = "Ducky"

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DialogueNPCs/Base/BaseDialogueNPC.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[node name="NPC" type="KinematicBody2D" groups=[
+"DialogNPC",
+]]
+script = ExtResource( 1 )
+
+[node name="NPCSprite" type="Sprite" parent="."]
+
+[node name="NPCCollision" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )

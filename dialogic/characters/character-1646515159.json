@@ -1,0 +1,20 @@
+{
+	"color": "#ffeae21b",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1646515159.json",
+	"mirror_portraits": false,
+	"name": "Ducky",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 100,
+	"offset_y": -100,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://DialogueNPCs/DuckyNpc/Ducky.png"
+		}
+	],
+	"scale": 20
+}

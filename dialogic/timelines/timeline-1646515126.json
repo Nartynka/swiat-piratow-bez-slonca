@@ -1,0 +1,111 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1646515159.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1646515159.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Quack"
+		},
+		{
+			"action": "join",
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Que?"
+		},
+		{
+			"character": "character-1646515159.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Porque?"
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dude"
+		},
+		{
+			"character": "character-1646515159.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Czego chcesz?"
+		},
+		{
+			"choice": "Wiedzy",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Poszukuje kaczej wiedzy"
+		},
+		{
+			"character": "character-1646515159.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Najpierw mleko, potem platki"
+		},
+		{
+			"choice": "Bitki",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nie interesuj sie bo kaczej mordki dostaniesz"
+		},
+		{
+			"character": "character-1646515159.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nawet mi ciebie nie zal"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1646515126.json",
+		"name": "Ducky"
+	}
+}
