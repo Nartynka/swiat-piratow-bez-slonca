@@ -1,0 +1,20 @@
+{
+	"color": "#ffff3000",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1646849443.json",
+	"mirror_portraits": false,
+	"name": "Ines",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -95,
+	"offset_y": -55,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Npc/ines-avatar.png"
+		}
+	],
+	"scale": 40
+}

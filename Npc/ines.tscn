@@ -38,6 +38,9 @@ animations = [ {
 
 [node name="Ines" type="KinematicBody2D"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.16516, 0.16516 )
@@ -58,12 +61,12 @@ visible = false
 shape = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 32, -29 )
+position = Vector2( 19, -24 )
 scale = Vector2( 0.65625, 0.65625 )
 z_index = 2
 frames = SubResource( 8 )
 animation = "dialog"
-frame = 2
+frame = 1
 playing = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

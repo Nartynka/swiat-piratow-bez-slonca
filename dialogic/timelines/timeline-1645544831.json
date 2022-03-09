@@ -147,6 +147,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "(Don't change)",
 			"text": "A wiec wybrales!\nNiech tlum zdecyduje czy wybrales dobrze!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1.5
 		}
 	],
 	"metadata": {

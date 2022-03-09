@@ -163,6 +163,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Now go away, stranger. Let me enjoy the last coffee in the world alone."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1.5
 		}
 	],
 	"metadata": {
