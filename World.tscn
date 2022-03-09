@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Npc/sensei.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Npc/thinker.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Npc/ines.tscn" type="PackedScene" id=4]
 
 [node name="World" type="Node"]
 
@@ -22,6 +23,9 @@ position = Vector2( 34, -6 )
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
 remote_path = NodePath("../../../Camera2D")
+
+[node name="Ines" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( -52, 43 )
 
 [node name="Thinker" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( 146, 1 )
