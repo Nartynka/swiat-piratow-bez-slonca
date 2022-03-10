@@ -1,0 +1,20 @@
+{
+	"color": "#ff658a75",
+	"description": "",
+	"display_name": "Baby Yoda",
+	"display_name_bool": true,
+	"id": "character-1646933575.json",
+	"mirror_portraits": true,
+	"name": "BabyYoda",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -90,
+	"offset_y": -65,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Npc/babyYoda/BabyYoda.png"
+		}
+	],
+	"scale": 30
+}
