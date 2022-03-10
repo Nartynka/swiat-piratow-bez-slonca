@@ -125,6 +125,10 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1.5
 		}
 	],
 	"metadata": {
