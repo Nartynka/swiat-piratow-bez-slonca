@@ -1,0 +1,20 @@
+{
+	"color": "#ffc100ff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1646945336.json",
+	"mirror_portraits": false,
+	"name": "Annie",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 110,
+	"offset_y": -55,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Npc/annie_avatar.png"
+		}
+	],
+	"scale": 80
+}
