@@ -67,6 +67,7 @@ position = Vector2( 1, -31 )
 z_index = 2
 frames = SubResource( 8 )
 animation = "dialog"
+frame = 4
 playing = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

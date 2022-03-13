@@ -8,13 +8,13 @@
 	"name": "dino",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 0,
-	"offset_y": 0,
+	"offset_x": -95,
+	"offset_y": -65,
 	"portraits": [
 		{
 			"name": "Default",
 			"path": "res://Npc/dino_dialog.png"
 		}
 	],
-	"scale": 90
+	"scale": 20
 }

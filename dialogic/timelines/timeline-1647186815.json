@@ -119,20 +119,6 @@
 			"text": "Me? For what!"
 		},
 		{
-			"action": "join",
-			"character": "character-1645543433.json",
-			"event_id": "dialogic_002",
-			"mirror": false,
-			"portrait": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": true,
-				"4": false
-			}
-		},
-		{
 			"character": "character-1645543433.json",
 			"event_id": "dialogic_010",
 			"options": [
