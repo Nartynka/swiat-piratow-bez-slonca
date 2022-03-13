@@ -47,4 +47,4 @@ position = Vector2( 77, -55 )
 position = Vector2( -76, 44 )
 
 [node name="Dino2" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 155, 1 )
+position = Vector2( 130, 43 )
