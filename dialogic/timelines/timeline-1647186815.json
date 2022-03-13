@@ -1,0 +1,251 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Rawr!"
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What are you even looking for, huh?"
+		},
+		{
+			"choice": "Uhm, nothing...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"action": "join",
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Um, no, nothing particular."
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ok."
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Just don't bother me in vain, okay?"
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You have plenty of others to gossip with."
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, fine. It was nice meeting you."
+		},
+		{
+			"action": "leaveall",
+			"character": "[All]",
+			"event_id": "dialogic_003"
+		},
+		{
+			"choice": "You!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"action": "join",
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah, I was looking for you, actually!"
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Me? For what!"
+		},
+		{
+			"action": "join",
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Um, well..."
+		},
+		{
+			"choice": "I need your help",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I wanted to ask you something, see..."
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And you assume I'm not busy?"
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Come back later, maybe I'll have some minutes to spare."
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Or I will not."
+		},
+		{
+			"choice": "To wish you good day!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I just wanted to wish you some good time here, simply."
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Really?"
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well... That's sort of nice."
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ok, now, do not bother me, I have something to do."
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But you're just standing there?"
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And?"
+		},
+		{
+			"character": "character-1647186827.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bye, go talk with others."
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Goodbye, see you around!"
+		},
+		{
+			"action": "leaveall",
+			"character": "[All]",
+			"event_id": "dialogic_003"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1647186815.json",
+		"name": "dino"
+	}
+}

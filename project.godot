@@ -54,6 +54,12 @@ config/name="swiat_piratow_bez_slonca"
 run/main_scene="res://World.tscn"
 config/icon="res://Player/icon.png"
 
+[autoload]
+
+UserData="*res://addons/github-integration/scripts/user_data.gd"
+IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
+RestHandler="*res://addons/github-integration/scripts/RestHandler.gd"
+
 [display]
 
 window/size/width=320
@@ -65,7 +71,7 @@ window/stretch/aspect="keep"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/github-integration/plugin.cfg" )
 
 [gdnative]
 
