@@ -1,0 +1,121 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1647199531.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1647199531.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Howdy!"
+		},
+		{
+			"action": "join",
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Watchu doin' over there?"
+		},
+		{
+			"character": "character-1647199531.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "There's an important question I need to ask you"
+		},
+		{
+			"character": "character-1647199531.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Tea or Coffee?"
+		},
+		{
+			"choice": "Tea",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tea?"
+		},
+		{
+			"choice": "Coffee",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Coffee?"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1647199531.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's milk for the bones!"
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That wasn't even an option..."
+		},
+		{
+			"character": "character-1647199531.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "what are you, a playable character?"
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You were not supposed to do that -_-"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1647199523.json",
+		"name": "sans"
+	}
+}
