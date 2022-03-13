@@ -6,4 +6,4 @@ func _process(delta):
 			emit_signal("button_down")
 		if Input.is_action_just_released(get_meta('input_next')):
 			emit_signal("button_up")
-			emit_signal("pressed")
+			#emit_signal("pressed")
