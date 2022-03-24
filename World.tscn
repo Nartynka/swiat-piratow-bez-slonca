@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Npc/sensei.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Npc/annie.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Npc/Sans.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Npc/dino.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Npc/Byczeq.tscn" type="PackedScene" id=11]
 
 [node name="World" type="Node"]
 
@@ -51,3 +52,6 @@ position = Vector2( 139, 65 )
 
 [node name="Sans" parent="YSort" instance=ExtResource( 9 )]
 position = Vector2( 38, -80 )
+
+[node name="Byczeq" parent="YSort" instance=ExtResource( 11 )]
+position = Vector2( -69, -54 )

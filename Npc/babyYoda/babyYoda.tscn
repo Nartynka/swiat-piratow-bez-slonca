@@ -64,7 +64,7 @@ position = Vector2( 1, -31 )
 z_index = 2
 frames = SubResource( 8 )
 animation = "dialog"
-frame = 2
+frame = 3
 playing = true
 offset = Vector2( 0, 10 )
 

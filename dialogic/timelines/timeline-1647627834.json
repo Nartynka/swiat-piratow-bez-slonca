@@ -1,0 +1,177 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "byczeqpixel",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "witaj"
+		},
+		{
+			"action": "join",
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "czesc"
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jest sprawa.."
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Czy chcesz zostac oswiecony tajemna wiedza?"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 2
+		},
+		{
+			"choice": "Tak",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "O niczym innym nie marze!"
+		},
+		{
+			"choice": "Nie",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nie, dzieki"
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No trudno.."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Idealnie! "
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A wiec: zastanawialem sie ostatnio nad sensem istnienia."
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Gdybym mial powiedziec, co cenie w zyciu najbardziej, powiedzialbym ze ludzi"
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ludzi, ktorzy podali mi pomocna dlon, kiedy sobie nie radzilem, kiedy bylem sam..."
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I co ciekawe, to wlasnie przypadkowe spotkania wplywaja na nasze zycie."
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Chodzi o to ze kiedy wyznaje sie pewne wartosci, nawet pozornie uniwersalne, bywa, ze nie znajduje sie zrozumienia, ktore by tak rzec, ktore pomaga nam sie rozwijac."
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ja mialem szczescie by tak rzec, poniewaz je znalazlem i dziekuje zyciu!"
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dziekuje mu; zycie to spiew, zycie to taniec, zycie to milosc!"
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wielu ludzi pyta mnie o to samo: ale jak ty to robisz, skad czerpiesz te radosc? A ja odpowiadam, ze to proste! To umilowanie zycia!"
+		},
+		{
+			"character": "character-1647627736.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "To wlasnie ono sprawia, ze dzisiaj na przyklad buduje maszyny, a jutro - kto wie? Dlaczego by nie - oddam sie pracy spolecznej i bede ot, chociazby, sadzic... marchew"
+		},
+		{
+			"character": "character-1645543433.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "bruh.."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1647627834.json",
+		"name": "byczeq"
+	}
+}
