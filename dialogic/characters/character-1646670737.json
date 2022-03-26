@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Npc/thinker_avatar.png"
+			"path": "res://Npc/thinker/thinker_avatar.png"
 		}
 	],
 	"scale": 200

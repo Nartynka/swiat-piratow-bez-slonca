@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Npc/Sans-avatar.png"
+			"path": "res://Npc/sans/Sans-avatar.png"
 		}
 	],
 	"scale": 12

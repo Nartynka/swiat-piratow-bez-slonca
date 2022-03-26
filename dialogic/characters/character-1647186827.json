@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Npc/dino_dialog.png"
+			"path": "res://Npc/dino/dino_dialog.png"
 		}
 	],
 	"scale": 20

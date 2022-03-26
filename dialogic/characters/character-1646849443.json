@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Npc/ines-avatar.png"
+			"path": "res://Npc/ines/ines-avatar.png"
 		}
 	],
 	"scale": 40

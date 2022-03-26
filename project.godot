@@ -50,7 +50,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="swiat_piratow_bez_slonca"
+config/name="dialogi"
 run/main_scene="res://World.tscn"
 config/icon="res://Player/icon.png"
 
