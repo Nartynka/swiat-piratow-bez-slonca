@@ -1,0 +1,21 @@
+{
+	"color": "#ffa95817",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1650737565.json",
+	"mirror_portraits": false,
+	"name": "Sensei",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -90,
+	"offset_y": -65,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Npc/sesnsei_avatar.png"
+		}
+	],
+	"scale": 200,
+	"theme": ""
+}
