@@ -1,0 +1,36 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0.5,
+			"character": "character-1650737565.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650737565.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Witaj!\nPrzynies mi 5 zlotych monet a dostaniesz nagorde!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1650725175.json",
+		"name": "Test Quest"
+	}
+}
