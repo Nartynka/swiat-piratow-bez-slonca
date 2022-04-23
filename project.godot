@@ -19,15 +19,35 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicClass.gd"
 }, {
+"base": "Reference",
+"class": "DialogicAnimaPropertiesHelper",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/Anima/DialogicAnimaPropertiesHelper.gd"
+}, {
+"base": "Node",
+"class": "DialogicAnimaResources",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/Anima/DialogicAnimaResources.gd"
+}, {
 "base": "Control",
 "class": "DialogicBackgroundMusic",
 "language": "GDScript",
 "path": "res://addons/dialogic/Nodes/BackgroundMusic.gd"
 }, {
 "base": "Node",
+"class": "DialogicCustomEvents",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/DialogicCustomEvents.gd"
+}, {
+"base": "Node",
 "class": "DialogicDefinitionsUtil",
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicDefinitionsUtil.gd"
+}, {
+"base": "Node",
+"class": "DialogicParser",
+"language": "GDScript",
+"path": "res://addons/dialogic/Parser/DialogicParser.gd"
 }, {
 "base": "Reference",
 "class": "DialogicResources",
@@ -38,14 +58,24 @@ _global_script_classes=[ {
 "class": "DialogicUtil",
 "language": "GDScript",
 "path": "res://addons/dialogic/Other/DialogicUtil.gd"
+}, {
+"base": "PanelContainer",
+"class": "HistoryRow",
+"language": "GDScript",
+"path": "res://addons/dialogic/Example Assets/History/HistoryRow.gd"
 } ]
 _global_script_class_icons={
 "DTS": "",
 "Dialogic": "",
+"DialogicAnimaPropertiesHelper": "",
+"DialogicAnimaResources": "",
 "DialogicBackgroundMusic": "",
+"DialogicCustomEvents": "",
 "DialogicDefinitionsUtil": "",
+"DialogicParser": "",
 "DialogicResources": "",
-"DialogicUtil": ""
+"DialogicUtil": "",
+"HistoryRow": ""
 }
 
 [application]
