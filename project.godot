@@ -89,6 +89,7 @@ config/icon="res://Player/icon.png"
 Quest="*res://singletons/Quest.gd"
 Inventory="*res://singletons/Inventory.gd"
 DialogManager="*res://singletons/DialogManager.gd"
+Gui="*res://UI/GUI.tscn"
 
 [display]
 
