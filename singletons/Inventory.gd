@@ -36,7 +36,7 @@ func remove_item(type:String, amount:int) -> bool:
 		return true
 	else:
 		return false
-	pass
-	
-func list() -> Dictionary:
-	return inventory.duplicate()
+
+# for future save
+#func list() -> Dictionary:
+#	return inventory.duplicate()

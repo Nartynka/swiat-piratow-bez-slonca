@@ -62,22 +62,3 @@ required_amount = 2
 initial_dialog = "Test Quest 2"
 pending_dialog = "Test Quest Pending 2"
 delivered_dialog = "Test Quest Complete 2"
-
-[node name="Label" type="Label" parent="."]
-margin_left = 34.0
-margin_top = -176.0
-margin_right = 355.0
-margin_bottom = -9.0
-text = "Uwaga, troche zbugowane to
-Nie mozesz miec wystarczajacej liczby itemow
-podczas akceptowania questa poniewaz
-jesli masz 5 monet przed rozpoczeciem questa to
-podczas rozpoczecia odrazu zaliczy ci questa 
-ale wyswietli dialog o przyjeciu questa
-Kolejna rozmowa to juz bedzie kolejny quest
-
-TLDR; Konczy questa podczas jego rozpoczecia 
-jesli spelnia warunek zaliczenia"
-__meta__ = {
-"_edit_use_anchors_": false
-}
