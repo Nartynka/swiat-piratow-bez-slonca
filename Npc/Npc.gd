@@ -2,9 +2,7 @@ extends Area2D
 
 var active = false
 export(String) var character_name = "Nameless NPC"
-#export(Array, String, MULTILINE) var dialogs = ["Nic dla ciebie nie mam"]
 var quest_list = []
-var is_in_dialog = false
 
 func _ready():
 	for child in get_children():
@@ -22,17 +20,7 @@ func _input(event):
 			quest.start_quest()
 			return
 		if !quest_list:
-			if not is_in_dialog:
-				var dialog = Dialogic.start("Default")
-				get_tree().paused = true
-				is_in_dialog = true
-				dialog.pause_mode = Node.PAUSE_MODE_PROCESS
-				dialog.connect("timeline_end", self, "unpause")
-				add_child(dialog)
-
-func unpause(timeline_name):
-	get_tree().paused = false
-	is_in_dialog = false
+			DialogManager.start("Default")
 
 func _on_body_entered(body):
 	if body.name == "Player":
