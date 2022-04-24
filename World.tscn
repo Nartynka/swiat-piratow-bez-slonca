@@ -10,31 +10,33 @@ position = Vector2( 193, 82 )
 current = true
 smoothing_enabled = true
 
-[node name="Coin" parent="." instance=ExtResource( 4 )]
+[node name="Coins" type="Node" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource( 4 )]
 position = Vector2( 104, 17 )
 
-[node name="Coin2" parent="." instance=ExtResource( 4 )]
+[node name="Coin2" parent="Coins" instance=ExtResource( 4 )]
 position = Vector2( 121, 42 )
 
-[node name="Coin3" parent="." instance=ExtResource( 4 )]
+[node name="Coin3" parent="Coins" instance=ExtResource( 4 )]
 position = Vector2( 146, 46 )
 
-[node name="Coin4" parent="." instance=ExtResource( 4 )]
+[node name="Coin4" parent="Coins" instance=ExtResource( 4 )]
 position = Vector2( 88, 36 )
 
-[node name="Coin6" parent="." instance=ExtResource( 4 )]
+[node name="Coin6" parent="Coins" instance=ExtResource( 4 )]
 position = Vector2( 216, 13 )
 
-[node name="Coin7" parent="." instance=ExtResource( 4 )]
+[node name="Coin7" parent="Coins" instance=ExtResource( 4 )]
 position = Vector2( 263, 43 )
 
-[node name="Coin8" parent="." instance=ExtResource( 4 )]
+[node name="Coin8" parent="Coins" instance=ExtResource( 4 )]
 position = Vector2( 210, 38 )
 
-[node name="Coin9" parent="." instance=ExtResource( 4 )]
+[node name="Coin9" parent="Coins" instance=ExtResource( 4 )]
 position = Vector2( 136, 19 )
 
-[node name="Coin11" parent="." instance=ExtResource( 4 )]
+[node name="Coin11" parent="Coins" instance=ExtResource( 4 )]
 position = Vector2( 271, 21 )
 
 [node name="YSort" type="YSort" parent="."]
