@@ -19,10 +19,8 @@ func _input(event):
 	if event.is_action_pressed("action"):
 		if active and quest_list:
 			var quest = quest_list[0]
-			var quest_dialog = get_node(quest.name).process()
-			if quest_dialog != "":
-				quest.process()
-				return
+			quest.start_quest()
+			return
 		if !quest_list:
 			if not is_in_dialog:
 				var dialog = Dialogic.start("Default")
