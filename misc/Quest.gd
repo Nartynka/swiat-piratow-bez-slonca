@@ -18,13 +18,12 @@ export(String) var initial_dialog = "Test Quest"
 export(String) var pending_dialog = "Test Quest Pending"
 export(String) var delivered_dialog = "Test Quest Complete"
 
-var is_in_dialog = false
 var quest_status = Quest.STATUS.NONEXISTENT
 
 func start_quest():
 	var is_quest_new = Quest.accept_quest(quest_name)
 	if is_quest_new:
-		start_dialog(initial_dialog)
+		DialogManager.start(initial_dialog)
 	else:
 		process()
 	
@@ -38,25 +37,11 @@ func process():
 				Quest.change_status(quest_name, Quest.STATUS.COMPLETE)
 				process()
 			else:
-				start_dialog(pending_dialog)
+				DialogManager.start(pending_dialog)
 		Quest.STATUS.COMPLETE:
 			Inventory.remove_item(required_item, required_amount)
 			Inventory.add_item(reward_item, reward_amount)
 			get_parent().quest_list.pop_front()
-			start_dialog(delivered_dialog)
-			#print(quest_name+" completed")
+			DialogManager.start(delivered_dialog)
 		_:
 			return
-
-func start_dialog(timeline_name):
-	if not is_in_dialog:
-		var dialog = Dialogic.start(timeline_name)
-		get_tree().paused = true
-		dialog.pause_mode = Node.PAUSE_MODE_PROCESS
-		is_in_dialog = true
-		dialog.connect("timeline_end", self, "unpause")
-		add_child(dialog)
-
-func unpause(timeline_name):
-	get_tree().paused = false
-	is_in_dialog = false
