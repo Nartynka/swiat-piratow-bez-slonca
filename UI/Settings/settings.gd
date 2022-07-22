@@ -1,4 +1,4 @@
-extends OptionButton
+extends Node2D
 
 onready var drop_down_menu = $OptionButton
 
@@ -22,5 +22,8 @@ func _on_OptionButton_item_selected(index):
 	if current_selected == 2:
 		OS.set_window_size(Vector2(1600,900))
 	if current_selected == 3:
-		OS.set_window_size(Vector2(1920,080))
-		
+		OS.set_window_size(Vector2(1920,800))
+
+
+func _on_BackBtn_pressed():
+	get_tree().change_scene("res://UI/MainMenu/MainMenu.tscn")
