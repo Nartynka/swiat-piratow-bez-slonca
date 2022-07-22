@@ -1,13 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Npc/sensei.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Npc/thinker.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Npc/ines.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Npc/dogy.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Npc/dogy.gd" type="Script" id=6]
-[ext_resource path="res://Npc/babyYoda/babyYoda.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Npc/annie.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Npc/Npc.tscn" type="PackedScene" id=2]
+[ext_resource path="res://misc/Quest.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Items/Coin.tscn" type="PackedScene" id=4]
 
 [node name="World" type="Node"]
 
@@ -16,15 +12,37 @@ position = Vector2( 193, 82 )
 current = true
 smoothing_enabled = true
 
+[node name="Coins" type="Node" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 104, 17 )
+
+[node name="Coin2" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 121, 42 )
+
+[node name="Coin3" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 146, 46 )
+
+[node name="Coin4" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 88, 36 )
+
+[node name="Coin6" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 216, 13 )
+
+[node name="Coin7" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 263, 43 )
+
+[node name="Coin8" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 210, 38 )
+
+[node name="Coin9" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 136, 19 )
+
+[node name="Coin11" parent="Coins" instance=ExtResource( 4 )]
+position = Vector2( 271, 21 )
+
 [node name="YSort" type="YSort" parent="."]
 position = Vector2( 159, 88 )
-
-[node name="dogy" parent="YSort" instance=ExtResource( 5 )]
-position = Vector2( -41, -55 )
-script = ExtResource( 6 )
-
-[node name="Sensei" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( -112, -6 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 34, -6 )
@@ -32,14 +50,17 @@ position = Vector2( 34, -6 )
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
 remote_path = NodePath("../../../Camera2D")
 
-[node name="Ines" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 32, 65 )
+[node name="NPC" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -64, 2 )
 
-[node name="Thinker" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( 155, 1 )
+[node name="Quest" parent="YSort/NPC" instance=ExtResource( 3 )]
+required_item = "Gold Coin"
+required_amount = 5
 
-[node name="BabyYoda" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 77, -55 )
-
-[node name="Annie" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( -76, 44 )
+[node name="Quest2" parent="YSort/NPC" instance=ExtResource( 3 )]
+quest_name = "Test Quest 2"
+required_item = "Gold Coin"
+required_amount = 2
+initial_dialog = "Test Quest 2"
+pending_dialog = "Test Quest Pending 2"
+delivered_dialog = "Test Quest Complete 2"
