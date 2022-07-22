@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/frame.png-d8f578d35b0e4d7072846a78d9c0ffe7.stex"
+path="res://.import/dialog In (24x8).png-2f763c40e5764ecb7530460f1d5d3108.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/frame.png"
-dest_files=[ "res://.import/frame.png-d8f578d35b0e4d7072846a78d9c0ffe7.stex" ]
+source_file="res://UI/Dialogue/dialog In (24x8).png"
+dest_files=[ "res://.import/dialog In (24x8).png-2f763c40e5764ecb7530460f1d5d3108.stex" ]
 
 [params]
 

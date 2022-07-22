@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://UI/DefaultButton/DefaultButton.gd" type="Script" id=1]
-[ext_resource path="res://UI/selected_buttom_theme.tres" type="StyleBox" id=2]
-[ext_resource path="res://UI/non_selected_theme.tres" type="StyleBox" id=3]
+[ext_resource path="res://UI/Resources/selected_buttom_theme.tres" type="StyleBox" id=2]
+[ext_resource path="res://UI/Resources/non_selected_theme.tres" type="StyleBox" id=3]
 
 [node name="Button" type="Button"]
 margin_right = 104.0

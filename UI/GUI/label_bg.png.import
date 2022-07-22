@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dialog Out (24x8).png-5efedd10c1c9c66d617f0f79a047c31f.stex"
+path="res://.import/label_bg.png-0bef9cf74737bb2991c5addd404e1925.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/dialog Out (24x8).png"
-dest_files=[ "res://.import/dialog Out (24x8).png-5efedd10c1c9c66d617f0f79a047c31f.stex" ]
+source_file="res://UI/GUI/label_bg.png"
+dest_files=[ "res://.import/label_bg.png-0bef9cf74737bb2991c5addd404e1925.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
