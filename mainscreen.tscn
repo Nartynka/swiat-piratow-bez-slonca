@@ -6,42 +6,43 @@
 [node name="mainscreen" type="Node2D"]
 
 [node name="background" type="Sprite" parent="."]
-position = Vector2( 512, 300 )
-scale = Vector2( 1.79649, 1.97368 )
+position = Vector2( 162.987, 95.5003 )
+scale = Vector2( 0.571882, 0.628287 )
 texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="menubuttun" type="Sprite" parent="."]
-
-[node name="menunewgame" parent="menubuttun" instance=ExtResource( 1 )]
+[node name="menunewgame" parent="." instance=ExtResource( 1 )]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 383.0
-margin_top = 215.0
-margin_right = 639.0
-margin_bottom = 278.0
+margin_left = 98.0
+margin_top = 48.0
+margin_right = 219.0
+margin_bottom = 71.0
 focus_neighbour_top = NodePath("../menuexit")
 focus_neighbour_bottom = NodePath("../menuoptions")
 text = "new game"
-reference_path = "res://newgamescene.tscn"
+reference_path = "res://World.tscn"
 start_focused = true
 
-[node name="menuoptions" parent="menubuttun" instance=ExtResource( 1 )]
-margin_left = 384.0
-margin_top = 288.0
-margin_right = 640.0
-margin_bottom = 352.0
+[node name="menuexit" parent="." instance=ExtResource( 1 )]
+margin_left = 100.0
+margin_top = 111.0
+margin_right = 219.0
+margin_bottom = 133.0
+focus_neighbour_top = NodePath("../menuoptions")
+focus_neighbour_bottom = NodePath("../menunewgame")
+text = "exit"
+
+[node name="menuoptions" parent="." instance=ExtResource( 1 )]
+margin_left = 97.0
+margin_top = 78.0
+margin_right = 217.0
+margin_bottom = 100.0
 focus_neighbour_top = NodePath("../menunewgame")
 focus_neighbour_bottom = NodePath("../menuexit")
 text = "options"
 reference_path = "res://optionsscene.tscn"
-
-[node name="menuexit" parent="menubuttun" instance=ExtResource( 1 )]
-margin_left = 384.0
-margin_top = 360.0
-margin_right = 640.0
-margin_bottom = 424.0
-focus_neighbour_top = NodePath("../menuoptions")
-focus_neighbour_bottom = NodePath("../menunewgame")
-text = "exit"

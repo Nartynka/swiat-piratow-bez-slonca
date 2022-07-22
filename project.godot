@@ -84,9 +84,25 @@ config/name="menu"
 run/main_scene="res://mainscreen.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+DialogManager="*res://singletons/DialogManager.gd"
+Quest="*res://singletons/Quest.gd"
+Inventory="*res://singletons/Inventory.gd"
+Gui="*res://UI/GUI.tscn"
+
 [display]
 
+window/size/width=320
+window/size/height=180
+window/size/test_width=1280
+window/size/test_height=720
 window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[global]
+
+windo=false
 
 [importer_defaults]
 

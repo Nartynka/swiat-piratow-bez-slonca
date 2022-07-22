@@ -18,9 +18,6 @@ margin_right = 51.0
 margin_bottom = 19.0
 rect_min_size = Vector2( 51, 19 )
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchor_left = 1.0
@@ -48,6 +45,3 @@ custom_fonts/font = SubResource( 2 )
 text = "10"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
