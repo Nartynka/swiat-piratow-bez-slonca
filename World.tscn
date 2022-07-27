@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Npc/sensei.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Npc/Npc.tscn" type="PackedScene" id=2]
+[ext_resource path="res://misc/Quest.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Items/Coin.tscn" type="PackedScene" id=4]
 
 [node name="World" type="Node"]
 
@@ -42,11 +44,23 @@ position = Vector2( 271, 21 )
 [node name="YSort" type="YSort" parent="."]
 position = Vector2( 159, 88 )
 
-[node name="Sensei" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( -117, -8 )
-
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 34, -6 )
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
 remote_path = NodePath("../../../Camera2D")
+
+[node name="NPC" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( -64, 2 )
+
+[node name="Quest" parent="YSort/NPC" instance=ExtResource( 3 )]
+required_item = "Gold Coin"
+required_amount = 5
+
+[node name="Quest2" parent="YSort/NPC" instance=ExtResource( 3 )]
+quest_name = "Test Quest 2"
+required_item = "Gold Coin"
+required_amount = 2
+initial_dialog = "Test Quest 2"
+pending_dialog = "Test Quest Pending 2"
+delivered_dialog = "Test Quest Complete 2"

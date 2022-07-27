@@ -10,6 +10,7 @@ func add_items():
 	drop_down_menu.add_item("1280x720")
 	drop_down_menu.add_item("1600x900")
 	drop_down_menu.add_item("1920x1080")
+	drop_down_menu.select(1)
 
 
 func _on_OptionButton_item_selected(index):

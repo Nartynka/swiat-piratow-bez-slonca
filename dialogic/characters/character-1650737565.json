@@ -8,8 +8,8 @@
 	"name": "Sensei",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": -95,
-	"offset_y": -80,
+	"offset_x": -90,
+	"offset_y": -65,
 	"portraits": [
 		{
 			"name": "Default",
