@@ -82,7 +82,6 @@ _global_script_class_icons={
 
 config/name="Legenda Pieczar"
 run/main_scene="res://UI/MainMenu/MainMenu.tscn"
-config/icon="res://Player/icon.png"
 >>>>>>>questy[autoload]Quest="*res://singletons/Quest.gd"
 Inventory="*res://singletons/Inventory.gd"
 DialogManager="*res://singletons/DialogManager.gd"
@@ -93,6 +92,7 @@ Gui="*res://UI/GUI.tscn"
 DialogManager="*res://singletons/DialogManager.gd"
 Quest="*res://singletons/Quest.gd"
 Inventory="*res://singletons/Inventory.gd"
+Music="*res://Music/Music.tscn"
 
 [display]
 

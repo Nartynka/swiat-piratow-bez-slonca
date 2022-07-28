@@ -1,7 +1,7 @@
-extends Area2D
+extends StaticBody2D
 
 var active = false
-export(String) var character_name = "Nameless NPC"
+export(String) var character_name = "Sensei"
 var quest_list = []
 
 func _ready():
@@ -22,10 +22,11 @@ func _input(event):
 		if !quest_list:
 			DialogManager.start("Default")
 
-func _on_body_entered(body):
+func _on_TriggerArea_body_entered(body):
 	if body.name == "Player":
 		active = true
-		
-func _on_body_exited(body):
+
+
+func _on_TriggerArea_body_exited(body):
 	if body.name == "Player":
 		active = false

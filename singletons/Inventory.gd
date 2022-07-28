@@ -30,8 +30,8 @@ func add_item(type:String, amount:int):
 func remove_item(type:String, amount:int):
 	if inventory.has(type) and inventory[type] >= amount:
 		inventory[type] -= amount
-		if inventory[type] == 0:
-			inventory.erase(type)
+#		if inventory[type] == 0:
+#			inventory.erase(type)
 		emit_signal("change_item", "removed", type, amount)
 	update_gui(type)
 

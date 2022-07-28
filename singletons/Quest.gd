@@ -9,6 +9,7 @@ enum STATUS { NONEXISTENT, STARTED, COMPLETE }
 
 # List of all started or completed quests
 var quest_list = {}
+signal quest_changed
 
 # Get the status of a quest. If it's not found it returns STATUS.NONEXISTENT
 func get_status(quest_name:String) -> int:
@@ -20,6 +21,7 @@ func get_status(quest_name:String) -> int:
 func change_status(quest_name:String, status:int):
 	if quest_list.has(quest_name):
 		quest_list[quest_name] = status
+		update_gui(quest_name)
 	else:
 		print("Non existing quest: "+quest_name)
 
@@ -29,8 +31,23 @@ func accept_quest(quest_name:String) -> bool:
 		return false
 	else:
 		quest_list[quest_name] = STATUS.STARTED
+		update_gui(quest_name)
 		#print(quest_name + " accepted")
 		return true
+
+func update_gui(quest_name):
+	emit_signal("quest_changed", quest_name, Quest.get_status_text(quest_name))
+
+func get_status_text(quest_name) -> String:
+	var quest_status = get_status(quest_name)
+	match quest_status:
+		Quest.STATUS.STARTED:
+			return "in progress"
+		Quest.STATUS.COMPLETE:
+			return "complete"
+		_:
+			return ""
+
 
 # List all the quest in a certain status
 # For future GUI

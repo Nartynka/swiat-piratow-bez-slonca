@@ -1,8 +1,9 @@
-extends Node2D
+extends Control
 
 onready var drop_down_menu = $OptionButton
 
 func _ready():
+	drop_down_menu.grab_focus()
 	add_items()
 
 func add_items():
@@ -23,7 +24,7 @@ func _on_OptionButton_item_selected(index):
 	if current_selected == 2:
 		OS.set_window_size(Vector2(1600,900))
 	if current_selected == 3:
-		OS.set_window_size(Vector2(1920,800))
+		OS.set_window_size(Vector2(1920,1080))
 
 
 func _on_BackBtn_pressed():

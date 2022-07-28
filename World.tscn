@@ -1,13 +1,26 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Npc/Npc.tscn" type="PackedScene" id=2]
 [ext_resource path="res://misc/Quest.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Items/Coin.tscn" type="PackedScene" id=4]
+[ext_resource path="res://UI/GUI/GUI.tscn" type="PackedScene" id=5]
 
 [node name="World" type="Node"]
 
+[node name="GUI" parent="." instance=ExtResource( 5 )]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -125.0
+margin_top = -203.0
+margin_right = 366.0
+margin_bottom = 138.0
+color = Color( 0.529412, 0.6, 0.52549, 1 )
+
 [node name="Camera2D" type="Camera2D" parent="."]
+pause_mode = 2
 position = Vector2( 193, 82 )
 current = true
 smoothing_enabled = true
@@ -54,12 +67,13 @@ remote_path = NodePath("../../../Camera2D")
 position = Vector2( -64, 2 )
 
 [node name="Quest" parent="YSort/NPC" instance=ExtResource( 3 )]
-required_item = "Gold Coin"
+quest_name = "Bring 5 coins"
+required_item = "Gold_Coin"
 required_amount = 5
 
 [node name="Quest2" parent="YSort/NPC" instance=ExtResource( 3 )]
-quest_name = "Test Quest 2"
-required_item = "Gold Coin"
+quest_name = "Bring 2 coins"
+required_item = "Gold_Coin"
 required_amount = 2
 initial_dialog = "Test Quest 2"
 pending_dialog = "Test Quest Pending 2"

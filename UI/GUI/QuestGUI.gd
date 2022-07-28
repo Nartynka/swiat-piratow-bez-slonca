@@ -1,7 +1,9 @@
-extends VBoxContainer
+extends NinePatchRect
 
-onready var title = $TitleLabel
-onready var desc = $DescriptionLabel
+onready var questLabel = $VBoxContainer/QuestLabel
 
-#func _ready():
-#	Quest.quest_list
+func _ready():
+	Quest.connect("quest_changed", self, "_on_quest_changed")
+	
+func _on_quest_changed(name, status):
+	questLabel.text = name + " ("+status+")"

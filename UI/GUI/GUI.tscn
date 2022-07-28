@@ -5,25 +5,23 @@
 
 [node name="GUI" type="CanvasLayer"]
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-anchor_right = 1.0
-margin_left = 5.0
-margin_top = 8.0
-margin_right = -5.0
-margin_bottom = 22.0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 10.0
+margin_top = 10.0
 margin_right = 310.0
-margin_bottom = 22.0
+margin_bottom = 29.0
 alignment = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="counter" parent="MarginContainer/HBoxContainer" instance=ExtResource( 2 )]
-margin_left = 259.0
-margin_right = 310.0
-margin_bottom = 22.0
+[node name="counter" parent="HBoxContainer" instance=ExtResource( 2 )]
+margin_left = 244.0
+margin_right = 300.0
 
-[node name="QuestGUI" parent="MarginContainer" instance=ExtResource( 1 )]
-margin_right = 310.0
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 91.0
+margin_bottom = 35.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="QuestGUI" parent="VBoxContainer" instance=ExtResource( 1 )]

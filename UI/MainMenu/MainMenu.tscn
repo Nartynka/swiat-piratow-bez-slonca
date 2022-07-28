@@ -1,26 +1,39 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://UI/MainMenu/background.png" type="Texture" id=1]
 [ext_resource path="res://UI/DefaultButton/DefaultButton.tscn" type="PackedScene" id=2]
 [ext_resource path="res://UI/MainMenu/MainMenu.gd" type="Script" id=3]
+[ext_resource path="res://UI/Resources/TitleFont.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Theme.tres" type="Theme" id=5]
 
-[node name="MainMenu" type="Node2D"]
+[sub_resource type="DynamicFont" id=1]
+size = 46
+outline_size = 1
+outline_color = Color( 0.117647, 0.117647, 0.117647, 1 )
+font_data = ExtResource( 4 )
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 5 )
 script = ExtResource( 3 )
 
-[node name="background" type="Sprite" parent="."]
-position = Vector2( 162.987, 95.5003 )
-scale = Vector2( 0.571882, 0.628287 )
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.529412, 0.6, 0.52549, 1 )
 
-[node name="NewGameBtn" parent="." instance=ExtResource( 2 )]
-margin_left = 105.0
-margin_top = 55.0
-margin_right = 209.0
-margin_bottom = 84.0
-text = "New Game"
+[node name="Title" type="Label" parent="."]
+margin_left = 80.0
+margin_top = 5.0
+margin_right = 242.0
+margin_bottom = 52.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0.462745 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 2
+custom_constants/shadow_as_outline = 0
+custom_fonts/font = SubResource( 1 )
+text = "Lauren{t}"
 
 [node name="SettingsBtn" parent="." instance=ExtResource( 2 )]
 margin_left = 106.0
@@ -36,10 +49,17 @@ margin_right = 210.0
 margin_bottom = 163.0
 text = "Quitt"
 
+[node name="NewGameBtn" parent="." instance=ExtResource( 2 )]
+margin_left = 105.0
+margin_top = 55.0
+margin_right = 209.0
+margin_bottom = 84.0
+text = "New Game"
+
 [node name="Label" type="Label" parent="."]
 margin_right = 40.0
 margin_bottom = 14.0
 
-[connection signal="pressed" from="NewGameBtn" to="." method="_on_NewGameBtn_pressed"]
 [connection signal="pressed" from="SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
 [connection signal="pressed" from="QuitBtn" to="." method="_on_QuitBtn_pressed"]
+[connection signal="pressed" from="NewGameBtn" to="." method="_on_NewGameBtn_pressed"]
