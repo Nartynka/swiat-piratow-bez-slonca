@@ -1,64 +1,58 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Npc/Npc.tscn" type="PackedScene" id=2]
 [ext_resource path="res://misc/Quest.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Items/Coin.tscn" type="PackedScene" id=4]
 [ext_resource path="res://UI/GUI/GUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Acient Ruins.tscn" type="PackedScene" id=6]
 
 [node name="World" type="Node"]
 
 [node name="GUI" parent="." instance=ExtResource( 5 )]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -125.0
-margin_top = -203.0
-margin_right = 366.0
-margin_bottom = 138.0
-color = Color( 0.529412, 0.6, 0.52549, 1 )
+[node name="Acient Ruins" parent="." instance=ExtResource( 6 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 pause_mode = 2
-position = Vector2( 193, 82 )
+position = Vector2( 241, 181 )
 current = true
 smoothing_enabled = true
 
 [node name="Coins" type="Node" parent="."]
 
 [node name="Coin" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 104, 17 )
+position = Vector2( 160, 109 )
 
 [node name="Coin2" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 121, 42 )
+position = Vector2( 441, 231 )
 
 [node name="Coin3" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 146, 46 )
+position = Vector2( 350, 249 )
 
 [node name="Coin4" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 88, 36 )
+position = Vector2( 56, 147 )
 
 [node name="Coin6" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 216, 13 )
+position = Vector2( 50, 320 )
 
 [node name="Coin7" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 263, 43 )
+position = Vector2( 427, 67 )
 
 [node name="Coin8" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 210, 38 )
+position = Vector2( 83, 345 )
 
 [node name="Coin9" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 136, 19 )
+position = Vector2( 156, 50 )
 
 [node name="Coin11" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 271, 21 )
+position = Vector2( 471, 47 )
 
 [node name="YSort" type="YSort" parent="."]
 position = Vector2( 159, 88 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 34, -6 )
+position = Vector2( 82, 93 )
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
 remote_path = NodePath("../../../Camera2D")
@@ -78,3 +72,6 @@ required_amount = 2
 initial_dialog = "Test Quest 2"
 pending_dialog = "Test Quest Pending 2"
 delivered_dialog = "Test Quest Complete 2"
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 1
