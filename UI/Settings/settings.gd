@@ -1,31 +1,14 @@
 extends Control
 
-onready var drop_down_menu = $OptionButton
+onready var fullscreenBtn = $FullscreenBtn
 
 func _ready():
-	drop_down_menu.grab_focus()
-	add_items()
-
-func add_items():
-	drop_down_menu.add_item("1024x546")
-	drop_down_menu.add_item("1280x720")
-	drop_down_menu.add_item("1600x900")
-	drop_down_menu.add_item("1920x1080")
-	drop_down_menu.select(1)
-
-
-func _on_OptionButton_item_selected(index):
-	var current_selected = index
-	
-	if current_selected == 0:
-		OS.set_window_size(Vector2(1024,546))
-	if current_selected == 1:
-		OS.set_window_size(Vector2(1280,720))
-	if current_selected == 2:
-		OS.set_window_size(Vector2(1600,900))
-	if current_selected == 3:
-		OS.set_window_size(Vector2(1920,1080))
-
+	fullscreenBtn.grab_focus()
+	fullscreenBtn.pressed = Screen.is_fullscreen
 
 func _on_BackBtn_pressed():
 	get_tree().change_scene("res://UI/MainMenu/MainMenu.tscn")
+
+
+func _on_FullscreenBtn_toggled(button_pressed):
+	Screen.set_screen(button_pressed)

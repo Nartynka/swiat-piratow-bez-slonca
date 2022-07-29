@@ -15,17 +15,19 @@ anchor_bottom = 1.0
 color = Color( 0.529412, 0.6, 0.52549, 1 )
 
 [node name="BackBtn" type="Button" parent="."]
-margin_left = 4.0
+margin_left = 10.0
 margin_top = 6.0
 margin_right = 108.0
 margin_bottom = 35.0
 text = "Back"
 
-[node name="OptionButton" type="OptionButton" parent="."]
-margin_left = 20.0
-margin_top = 52.0
-margin_right = 285.0
-margin_bottom = 87.0
+[node name="FullscreenBtn" type="CheckButton" parent="."]
+margin_left = 10.0
+margin_top = 46.0
+margin_right = 309.0
+margin_bottom = 78.0
+pressed = true
+text = "Fullscreen"
 
 [connection signal="pressed" from="BackBtn" to="." method="_on_BackBtn_pressed"]
-[connection signal="item_selected" from="OptionButton" to="." method="_on_OptionButton_item_selected"]
+[connection signal="toggled" from="FullscreenBtn" to="." method="_on_FullscreenBtn_toggled"]

@@ -357,7 +357,7 @@ animation = "side_idle"
 animation = "side_idle"
 
 [sub_resource type="AnimationNodeAnimation" id=22]
-animation = "up_idle"
+animation = "down_idle"
 
 [sub_resource type="AnimationNodeAnimation" id=23]
 animation = "up_idle"
@@ -427,10 +427,9 @@ states/idle/position = Vector2( 145, 65 )
 states/pick_up/node = SubResource( 30 )
 states/pick_up/position = Vector2( -26, 65 )
 states/walk/node = SubResource( 29 )
-states/walk/position = Vector2( 326, 65 )
+states/walk/position = Vector2( 324, 65 )
 transitions = [ "idle", "walk", SubResource( 31 ), "walk", "idle", SubResource( 32 ), "idle", "attack", SubResource( 33 ), "attack", "idle", SubResource( 34 ), "walk", "attack", SubResource( 35 ), "idle", "pick_up", SubResource( 36 ), "pick_up", "idle", SubResource( 37 ) ]
 start_node = "idle"
-end_node = "idle"
 graph_offset = Vector2( -501.283, 7 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=39]
@@ -444,7 +443,6 @@ shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 pause_mode = 2
-autoplay = "side_idle"
 playback_speed = 0.6
 anims/RESET = SubResource( 2 )
 anims/down_attack = SubResource( 9 )
@@ -464,9 +462,10 @@ hframes = 4
 vframes = 2
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
+pause_mode = 2
 tree_root = SubResource( 38 )
 anim_player = NodePath("../AnimationPlayer")
 parameters/playback = SubResource( 39 )
 parameters/attack/blend_position = Vector2( 0, 0 )
-parameters/idle/blend_position = Vector2( 0, 0 )
+parameters/idle/blend_position = Vector2( 0.00144506, 0.00285709 )
 parameters/walk/blend_position = Vector2( 0, 0 )
