@@ -95,6 +95,11 @@ Inventory="*res://singletons/Inventory.gd"
 Music="*res://Music/Music.tscn"
 Screen="*res://singletons/Screen.gd"
 
+[debug]
+
+gdscript/warnings/unused_argument=false
+gdscript/warnings/return_value_discarded=false
+
 [display]
 
 window/size/width=320
