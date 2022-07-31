@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Npc/sesnsei_avatar.png"
+			"path": "res://Npc/SenseiNPC/sesnsei_avatar.png"
 		}
 	],
 	"scale": 200,

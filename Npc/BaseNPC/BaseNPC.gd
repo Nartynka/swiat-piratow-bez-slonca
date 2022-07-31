@@ -1,7 +1,7 @@
 extends StaticBody2D
 
 var active = false
-export(String) var character_name = "Sensei"
+export(String) var character_name = "NPC"
 var quest_list = []
 
 func _ready():

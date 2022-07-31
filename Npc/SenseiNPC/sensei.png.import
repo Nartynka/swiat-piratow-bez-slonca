@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sesnsei_avatar.png-b65e8b9355f7a745bdeef64ad28b9d2d.stex"
+path="res://.import/sensei.png-56ce662f87717db923530970028bf9c3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Npc/sesnsei_avatar.png"
-dest_files=[ "res://.import/sesnsei_avatar.png-b65e8b9355f7a745bdeef64ad28b9d2d.stex" ]
+source_file="res://Npc/SenseiNPC/sensei.png"
+dest_files=[ "res://.import/sensei.png-56ce662f87717db923530970028bf9c3.stex" ]
 
 [params]
 
