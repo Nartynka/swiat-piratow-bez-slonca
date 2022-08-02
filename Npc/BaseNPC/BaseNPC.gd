@@ -22,6 +22,9 @@ func _input(event):
 		if !quest_list:
 			DialogManager.start("Default")
 
+func poof():
+	$AnimationPlayer.play("poof")
+
 func _on_TriggerArea_body_entered(body):
 	if body.name == "Player":
 		active = true

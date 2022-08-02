@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
+[ext_resource path="res://UI/BaseButton/BaseButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://UI/Settings/settings.gd" type="Script" id=2]
 [ext_resource path="res://Theme.tres" type="Theme" id=3]
 
@@ -14,7 +15,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0.529412, 0.6, 0.52549, 1 )
 
-[node name="BackBtn" type="Button" parent="."]
+[node name="BackBtn" parent="." instance=ExtResource( 1 )]
 margin_left = 10.0
 margin_top = 6.0
 margin_right = 108.0
@@ -26,8 +27,21 @@ margin_left = 10.0
 margin_top = 46.0
 margin_right = 309.0
 margin_bottom = 78.0
-pressed = true
 text = "Fullscreen"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="MuteBtn" type="CheckButton" parent="."]
+margin_left = 10.0
+margin_top = 89.0
+margin_right = 309.0
+margin_bottom = 121.0
+text = "Mute"
+__meta__ = {
+"_editor_description_": ""
+}
 
 [connection signal="pressed" from="BackBtn" to="." method="_on_BackBtn_pressed"]
 [connection signal="toggled" from="FullscreenBtn" to="." method="_on_FullscreenBtn_toggled"]
+[connection signal="toggled" from="MuteBtn" to="." method="_on_MuteBtn_toggled"]

@@ -44,9 +44,12 @@ __meta__ = {
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
 margin_right = 81.0
 margin_bottom = 11.0
-custom_colors/font_color_shadow = Color( 0.121569, 0.313726, 0.141176, 1 )
+custom_colors/font_color_shadow = Color( 0.427451, 0.109804, 0.109804, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "Active quest:"
+__meta__ = {
+"_editor_description_": ""
+}
 
 [node name="QuestLabel" type="Label" parent="VBoxContainer"]
 margin_top = 15.0

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://UI/DefaultButton/DefaultButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/BaseButton/BaseButton.tscn" type="PackedScene" id=2]
 [ext_resource path="res://UI/MainMenu/MainMenu.gd" type="Script" id=3]
 [ext_resource path="res://UI/Resources/TitleFont.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://Theme.tres" type="Theme" id=5]

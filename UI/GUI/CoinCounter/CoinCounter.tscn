@@ -2,7 +2,7 @@
 
 [ext_resource path="res://UI/Resources/Minecraft.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://UI/GUI.png" type="Texture" id=2]
-[ext_resource path="res://Items/coin.png" type="Texture" id=3]
+[ext_resource path="res://Items/GoldCoin/coin.png" type="Texture" id=3]
 [ext_resource path="res://UI/GUI/CoinCounter/CoinCounter.gd" type="Script" id=4]
 
 [sub_resource type="AtlasTexture" id=1]

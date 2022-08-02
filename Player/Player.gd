@@ -25,7 +25,7 @@ func _physics_process(delta):
 	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	input_vector = input_vector.normalized()
 	
-	if Input.is_action_just_pressed("action"):
+	if Input.is_action_just_pressed("pick_up"):
 		state = PICK_UP
 	if Input.is_action_just_pressed("attack"):
 		state = ATTACK

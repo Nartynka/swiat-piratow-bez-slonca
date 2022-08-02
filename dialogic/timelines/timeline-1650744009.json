@@ -24,7 +24,27 @@
 			"character": "character-1650737565.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Dzieki! Pa!"
+			"text": "Dzieki! Zyzshroom jest twoj"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "poof",
+				"target_node_path": "/root/World/YSort/NPC"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "show",
+				"target_node_path": "/root/World/Mushroom"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"event_id": "dialogic_022",

@@ -1,8 +1,9 @@
-[gd_resource type="Theme" load_steps=4 format=2]
+[gd_resource type="Theme" load_steps=5 format=2]
 
 [ext_resource path="res://UI/Resources/defaultFont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://UI/Resources/selected_theme.tres" type="StyleBox" id=2]
 [ext_resource path="res://UI/Resources/non_selected_theme.tres" type="StyleBox" id=3]
+[ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultItalicFont.tres" type="DynamicFont" id=4]
 
 [resource]
 Button/styles/focus = ExtResource( 2 )
@@ -14,3 +15,5 @@ OptionButton/styles/focus = ExtResource( 2 )
 OptionButton/styles/hover = ExtResource( 2 )
 OptionButton/styles/normal = ExtResource( 3 )
 OptionButton/styles/pressed = ExtResource( 2 )
+RichTextLabel/colors/default_color = Color( 0.498039, 0.247059, 0.247059, 1 )
+RichTextLabel/fonts/italics_font = ExtResource( 4 )

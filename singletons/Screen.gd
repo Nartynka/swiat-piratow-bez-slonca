@@ -3,7 +3,7 @@ extends Node
 onready var vp = get_tree().get_root()
 onready var base_size = Vector2(1920, 1080)
 
-export(bool) var is_fullscreen = true
+export(bool) var is_fullscreen = false
 
 func _ready():
 	set_screen(is_fullscreen)
