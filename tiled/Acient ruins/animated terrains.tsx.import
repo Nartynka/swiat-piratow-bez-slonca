@@ -1,0 +1,19 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/animated terrains.tsx-43a9203ccab5cb6dbc05ff88ac989fbc.res"
+
+[deps]
+
+source_file="res://tiled/Acient ruins/animated terrains.tsx"
+dest_files=[ "res://.import/animated terrains.tsx-43a9203ccab5cb6dbc05ff88ac989fbc.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=true
+image_flags=0
+embed_internal_images=true
+save_tiled_properties=false
+post_import_script=""

@@ -1,0 +1,19 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/altar.tsx-cfb8eed487b4ae673129638ab725aa5c.res"
+
+[deps]
+
+source_file="res://tiled/Acient ruins/altar.tsx"
+dest_files=[ "res://.import/altar.tsx-cfb8eed487b4ae673129638ab725aa5c.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=true
+image_flags=0
+embed_internal_images=true
+save_tiled_properties=false
+post_import_script=""

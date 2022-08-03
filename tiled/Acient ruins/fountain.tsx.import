@@ -1,0 +1,19 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/fountain.tsx-208f3c467bbf90cded05084d48e6ed58.res"
+
+[deps]
+
+source_file="res://tiled/Acient ruins/fountain.tsx"
+dest_files=[ "res://.import/fountain.tsx-208f3c467bbf90cded05084d48e6ed58.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=true
+image_flags=0
+embed_internal_images=true
+save_tiled_properties=false
+post_import_script=""

@@ -5,7 +5,7 @@ var active = false
 
 func _input(event):
 	if active and event.is_action_pressed("pick_up"):
-		Inventory.add_item(item_name, 9)
+		Inventory.add_item(item_name, 1)
 		$AudioStreamPlayer.play()
 		yield(get_tree().create_timer(0.3), "timeout")
 		queue_free()

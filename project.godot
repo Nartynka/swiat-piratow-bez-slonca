@@ -94,6 +94,7 @@ Quest="*res://singletons/Quest.gd"
 Inventory="*res://singletons/Inventory.gd"
 Music="*res://Music/Music.tscn"
 Screen="*res://singletons/Screen.gd"
+SceneChange="*res://singletons/SceneChange.tscn"
 
 [debug]
 
@@ -117,6 +118,8 @@ enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/vnen.
 [global]
 
 windo=false
+colo=false
+color=false
 
 [importer_defaults]
 
@@ -238,7 +241,6 @@ common/enable_pause_aware_picking=true
 
 2d/options/use_nvidia_rect_flicker_workaround=true
 quality/intended_usage/framebuffer_allocation=0
-environment/default_clear_color=Color( 0.32549, 0.415686, 0.368627, 1 )
 environment/default_environment="res://default_env.tres"
 
 [tiled_importer]

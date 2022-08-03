@@ -1,0 +1,22 @@
+[remap]
+
+importer="vnen.tiled_importer"
+type="PackedScene"
+path="res://.import/map.tmx-a6f336cb404b8b1e99659cf5c6d28ba5.scn"
+
+[deps]
+
+source_file="res://tiled/Acient ruins/map.tmx"
+dest_files=[ "res://.import/map.tmx-a6f336cb404b8b1e99659cf5c6d28ba5.scn" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=true
+uv_clip=true
+image_flags=0
+collision_layer=1
+embed_internal_images=true
+save_tiled_properties=false
+add_background=true
+post_import_script=""

@@ -15,7 +15,7 @@ func _on_Reasume_pressed():
 	self.is_paused = false
 
 func _on_NewGameBtn_pressed():
-	get_tree().change_scene("res://World.tscn")
+	get_tree().change_scene("res://House.tscn")
 
 func _on_SettingsBtn_pressed():
 	get_tree().change_scene("res://UI/Settings/SettingsScreen.tscn")
