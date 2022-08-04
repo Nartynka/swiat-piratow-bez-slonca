@@ -1,5 +1,7 @@
 extends Node
 
+var fps_mode = false
+
 onready var vp = get_tree().get_root()
 onready var base_size = Vector2(1920, 1080)
 
