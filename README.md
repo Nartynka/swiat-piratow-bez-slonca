@@ -19,4 +19,4 @@ Minimal inventory implementation for these quests, "gold coins" as items
    * [ ] Towns
    * [ ] Dungeons / caves\
    *etc...*
-- [ ] Cutscene or some sort of story
+- [x] Cutscene or some sort of story
