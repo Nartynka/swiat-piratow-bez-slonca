@@ -1,6 +1,9 @@
 extends NinePatchRect
 
-onready var questLabel = $VBoxContainer/QuestLabel
+onready var questLabel = $QuestLabel
+
+func _physics_process(delta):
+	rect_size.x = questLabel.rect_size.x + 5
 
 func _ready():
 	Quest.connect("quest_changed", self, "_on_quest_changed")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Npc/SenseiNPC/SenseiNPC.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://UI/GUI/GUI.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Map.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Items/Mushroom/Mushroom.tscn" type="PackedScene" id=7]
+[ext_resource path="res://World/Objects.tscn" type="PackedScene" id=8]
 
 [node name="World" type="Node"]
 
@@ -25,35 +26,38 @@ visible = false
 position = Vector2( 311, 267 )
 monitoring = false
 
-[node name="Coins" type="Node2D" parent="."]
-position = Vector2( 169, 160 )
-
-[node name="Coin2" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 543, 260 )
-
-[node name="Coin3" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 401, 261 )
-
-[node name="Coin4" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 98, 147 )
-
-[node name="Coin6" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 9, 324 )
-
-[node name="Coin7" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 758, 365 )
-
-[node name="Coin8" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 35, 434 )
-
-[node name="Coin9" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 193, 58 )
-
-[node name="Coin11" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 890, 282 )
-
 [node name="YSort" type="YSort" parent="."]
 position = Vector2( 328, 248 )
+
+[node name="Coins" type="Node2D" parent="YSort"]
+position = Vector2( -159, -88 )
+
+[node name="Coin3" parent="YSort/Coins" instance=ExtResource( 4 )]
+position = Vector2( 402, 258 )
+
+[node name="Coin2" parent="YSort/Coins" instance=ExtResource( 4 )]
+position = Vector2( 543, 260 )
+
+[node name="Coin4" parent="YSort/Coins" instance=ExtResource( 4 )]
+position = Vector2( 98, 147 )
+
+[node name="Coin6" parent="YSort/Coins" instance=ExtResource( 4 )]
+position = Vector2( 9, 324 )
+
+[node name="Coin7" parent="YSort/Coins" instance=ExtResource( 4 )]
+position = Vector2( 758, 365 )
+
+[node name="Coin8" parent="YSort/Coins" instance=ExtResource( 4 )]
+position = Vector2( 35, 434 )
+
+[node name="Coin9" parent="YSort/Coins" instance=ExtResource( 4 )]
+position = Vector2( 193, 58 )
+
+[node name="Coin11" parent="YSort/Coins" instance=ExtResource( 4 )]
+position = Vector2( 890, 282 )
+
+[node name="Objects" parent="YSort" instance=ExtResource( 8 )]
+position = Vector2( -328, -248 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 82, 93 )
