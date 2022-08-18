@@ -54,17 +54,6 @@ __meta__ = {
 "_editor_description_": ""
 }
 
-[node name="FPStext" type="Label" parent="FpsBtn"]
-visible = false
-margin_left = -8.0
-margin_top = 35.0
-margin_right = 67.0
-margin_bottom = 45.0
-text = "FPS text"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [connection signal="pressed" from="BackBtn" to="." method="_on_BackBtn_pressed"]
 [connection signal="toggled" from="FullscreenBtn" to="." method="_on_FullscreenBtn_toggled"]
 [connection signal="toggled" from="MuteBtn" to="." method="_on_MuteBtn_toggled"]

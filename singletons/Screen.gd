@@ -1,11 +1,10 @@
 extends Node
 
-var fps_mode = true
-
 onready var vp = get_tree().get_root()
 onready var base_size = Vector2(1920, 1080)
 
 export(bool) var is_fullscreen = false
+export(bool) var fps_mode = true
 
 func _ready():
 	set_screen(is_fullscreen)
