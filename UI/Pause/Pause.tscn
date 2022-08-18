@@ -1,52 +1,73 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://UI/Pause/Pause.gd" type="Script" id=1]
 [ext_resource path="res://UI/BaseButton/BaseButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/Resources/defaultFont.tres" type="DynamicFont" id=3]
 
 [node name="Pause" type="Control"]
 pause_mode = 2
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Background" type="ColorRect" parent="."]
-margin_right = 320.0
+margin_right = 321.0
 margin_bottom = 180.0
-color = Color( 0.0470588, 0.0470588, 0.0470588, 0.341176 )
+color = Color( 0.768627, 0.701961, 0.701961, 0.133333 )
 
-[node name="Label" type="Label" parent="."]
-margin_left = 30.0
-margin_top = -4.0
-margin_right = 278.0
-margin_bottom = 60.0
+[node name="VBoxContainer" type="VBoxContainer" parent="Background"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -41.5
+margin_top = -34.0
+margin_right = 41.5
+margin_bottom = 34.0
+
+[node name="ReasumeBtn" parent="Background/VBoxContainer" instance=ExtResource( 2 )]
+margin_right = 83.0
+margin_bottom = 20.0
+text = "Reasume"
+script = null
+
+[node name="MainMenuBtn" parent="Background/VBoxContainer" instance=ExtResource( 2 )]
+margin_top = 24.0
+margin_right = 83.0
+margin_bottom = 44.0
+text = "Main Menu"
+script = null
+
+[node name="QuitBtn" parent="Background/VBoxContainer" instance=ExtResource( 2 )]
+margin_top = 48.0
+margin_right = 83.0
+margin_bottom = 68.0
+text = "Quit"
+script = null
+
+[node name="Pause" type="Label" parent="Background"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -124.0
+margin_right = 124.0
+margin_bottom = 64.0
 text = "Paused"
 align = 1
 valign = 1
 
-[node name="ReasumeBtn" parent="." instance=ExtResource( 2 )]
-margin_left = 101.0
-margin_top = 49.0
-margin_right = 205.0
-margin_bottom = 78.0
-text = "Reasume"
+[node name="Label2" type="Label" parent="Background"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -78.0
+margin_top = -25.0
+margin_bottom = -1.0
+custom_fonts/font = ExtResource( 3 )
+text = "Version 1.0 Beta
+Duck Army"
 
-[node name="MainMenuBtn" parent="." instance=ExtResource( 2 )]
-margin_left = 100.0
-margin_top = 87.0
-margin_right = 204.0
-margin_bottom = 116.0
-text = "Main Menu"
-
-[node name="QuitBtn" parent="." instance=ExtResource( 2 )]
-margin_left = 100.0
-margin_top = 125.0
-margin_right = 204.0
-margin_bottom = 154.0
-text = "Quit"
-
-[connection signal="pressed" from="ReasumeBtn" to="." method="_on_ReasumeBtn_pressed"]
-[connection signal="pressed" from="MainMenuBtn" to="." method="_on_MainMenuBtn_pressed"]
-[connection signal="pressed" from="QuitBtn" to="." method="_on_QuitBtn_pressed"]
+[connection signal="pressed" from="Background/VBoxContainer/ReasumeBtn" to="." method="_on_ReasumeBtn_pressed"]
+[connection signal="pressed" from="Background/VBoxContainer/MainMenuBtn" to="." method="_on_MainMenuBtn_pressed"]
+[connection signal="pressed" from="Background/VBoxContainer/QuitBtn" to="." method="_on_QuitBtn_pressed"]
