@@ -1,0 +1,70 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://HUD/HUD-Back.png" type="Texture" id=1]
+[ext_resource path="res://HUD/ManaBarVar1.png" type="Texture" id=2]
+[ext_resource path="res://HUD/RightAngel.png" type="Texture" id=3]
+[ext_resource path="res://HUD/HPBarVar1.png" type="Texture" id=4]
+[ext_resource path="res://HUD/SkillSlots.png" type="Texture" id=5]
+[ext_resource path="res://HUD/LeftDemon.png" type="Texture" id=6]
+[ext_resource path="res://HUD/EXPBar.png" type="Texture" id=7]
+[ext_resource path="res://HUD/HUD-Front.png" type="Texture" id=8]
+[ext_resource path="res://HUD/Mana_crop.png" type="Texture" id=9]
+[ext_resource path="res://HUD/HUD.gd" type="Script" id=10]
+
+[node name="HUD" type="CanvasLayer"]
+scale = Vector2( 0.84, 0.84 )
+transform = Transform2D( 0.84, 0, 0, 0.84, 0, 0 )
+script = ExtResource( 10 )
+
+[node name="ExpBar" type="Sprite" parent="."]
+position = Vector2( -1.19048, -1.19048 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="HpBar" type="Sprite" parent="."]
+position = Vector2( -1.19048, -1.19048 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="ManaBar2" type="Sprite" parent="."]
+visible = false
+position = Vector2( -1.19048, -1.19048 )
+texture = ExtResource( 2 )
+centered = false
+region_rect = Rect2( 280, 190, 80, 20 )
+
+[node name="ManaBar" type="TextureProgress" parent="."]
+margin_left = 287.319
+margin_top = 149.0
+margin_right = 349.319
+margin_bottom = 211.0
+rect_scale = Vector2( 1.05, 1.05 )
+step = 10.0
+value = 100.0
+texture_progress = ExtResource( 9 )
+fill_mode = 3
+
+[node name="Back" type="Sprite" parent="."]
+position = Vector2( -1.19048, -1.19048 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Front" type="Sprite" parent="."]
+position = Vector2( -1.19048, -1.19048 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="LeftDemon" type="Sprite" parent="."]
+position = Vector2( -1.19048, -1.19048 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="RightAngel" type="Sprite" parent="."]
+position = Vector2( -1.19048, -1.19048 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Inventory" type="Sprite" parent="."]
+position = Vector2( -1.19048, -1.19048 )
+texture = ExtResource( 5 )
+centered = false

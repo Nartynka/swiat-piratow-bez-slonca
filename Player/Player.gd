@@ -4,6 +4,8 @@ export var ACCELERATION = 500
 export var MAX_SPEED = 80
 export var FRICTION = 500
 
+signal mana_change(new_value)
+
 enum {
 	MOVE,
 	ATTACK,
@@ -15,6 +17,9 @@ var velocity = Vector2.ZERO
 var input_vector = Vector2.ZERO
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get('parameters/playback')
+
+var health = 3
+var mana = 100 setget set_mana
 
 func _ready():
 	animationTree.active = true
@@ -56,12 +61,18 @@ func move_state(delta):
 	velocity = move_and_slide(velocity)
 
 func attack_state():
-	if input_vector.x > 0:
-		$Sprite.flip_h = true
-	else:
-		$Sprite.flip_h = false
-	velocity = Vector2.ZERO
-	animationState.travel('attack')
+	if mana > 0:
+		if input_vector.x > 0:
+			$Sprite.flip_h = true
+		else:
+			$Sprite.flip_h = false
+		velocity = Vector2.ZERO
+		animationState.travel('attack')
+		self.mana -= 10
 
 func pick_state():
 	animationState.travel('pick_up')
+
+func set_mana(new_value):
+	mana = new_value
+	emit_signal("mana_change", new_value)

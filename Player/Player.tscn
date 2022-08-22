@@ -434,7 +434,7 @@ graph_offset = Vector2( -501.283, 7 )
 [sub_resource type="CircleShape2D" id=40]
 radius = 8.0
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" groups=["Player"]]
 collision_layer = 2
 script = ExtResource( 1 )
 
