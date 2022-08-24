@@ -12,6 +12,7 @@
 [ext_resource path="res://HUD/HUD.gd" type="Script" id=10]
 
 [node name="HUD" type="CanvasLayer"]
+pause_mode = 2
 scale = Vector2( 0.84, 0.84 )
 transform = Transform2D( 0.84, 0, 0, 0.84, 0, 0 )
 script = ExtResource( 10 )

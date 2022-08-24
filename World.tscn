@@ -14,8 +14,10 @@
 [node name="World" type="Node"]
 
 [node name="GUI" parent="." instance=ExtResource( 5 )]
+layer = 2
 
 [node name="HUD" parent="." instance=ExtResource( 9 )]
+layer = 1
 
 [node name="Map" parent="." instance=ExtResource( 6 )]
 

@@ -67,7 +67,5 @@ margin_top = 10.0
 margin_right = 60.0
 margin_bottom = 14.0
 rect_min_size = Vector2( 57, 4 )
-size_flags_horizontal = 15
-size_flags_vertical = 0
 custom_fonts/font = SubResource( 4 )
 text = "No quest started"

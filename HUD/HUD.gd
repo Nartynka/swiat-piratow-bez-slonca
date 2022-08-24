@@ -6,3 +6,7 @@ func _ready():
 
 func update_mana(new_value):
 	$ManaBar.value = new_value
+
+func _process(delta):
+	if DialogManager.is_in_dialog:
+		visible = false

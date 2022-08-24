@@ -5,6 +5,7 @@
 [ext_resource path="res://UI/GUI/FPS/FPS-mode.tscn" type="PackedScene" id=3]
 
 [node name="GUI" type="CanvasLayer"]
+layer = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_left = 5.0
