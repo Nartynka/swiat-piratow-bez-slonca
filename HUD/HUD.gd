@@ -10,3 +10,5 @@ func update_mana(new_value):
 func _process(delta):
 	if DialogManager.is_in_dialog:
 		visible = false
+	else:
+		visible = true
