@@ -20,3 +20,15 @@ Minimal inventory implementation for these quests, "gold coins" as items
    * [ ] Dungeons / caves\
    *etc...*
 - [x] Cutscene or some sort of story
+
+### Screenshots
+
+![Menu Screenshot](screenshots/menu.png)
+![Attack Screenshot](screenshots/attack.png)
+![Pick up Screenshot](screenshots/pick_up.png)
+![Dialogue Screenshot](screenshots/dialogue.png)
+![Cutscene Screenshot](screenshots/whatyouwant.png)
+![Shaking camera with big text Screenshot](screenshots/mother_scream.png)
+_more screenshots from cutscene in screenshots folder_
+![HUD Screenshot](screenshots/HUD.png)
+_This HUD is mostly a joke, not something that would be in final game 😅_
