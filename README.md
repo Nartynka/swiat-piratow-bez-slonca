@@ -20,6 +20,7 @@ Minimal inventory implementation for these quests, "gold coins" as items
    * [ ] Dungeons / caves\
    *etc...*
 - [x] Cutscene or some sort of story
+- [ ] Objects and stairs collisions
 
 ### Screenshots
 
