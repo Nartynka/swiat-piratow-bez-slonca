@@ -21,6 +21,13 @@
 			"z_index": 0
 		},
 		{
+			"event_id": "dialogic_025",
+			"extra": "[No Change]",
+			"glossary_id": "1659311831-648",
+			"text": "[No Change]",
+			"title": "[No Change]"
+		},
+		{
 			"character": "character-1650737565.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -52,7 +59,7 @@
 		}
 	],
 	"metadata": {
-		"dialogic-version": "1.4.1",
+		"dialogic-version": "1.4.5",
 		"file": "timeline-1650744009.json",
 		"name": "Test Quest Complete 2"
 	}
